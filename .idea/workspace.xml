@@ -5,25 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4d4780e-7ada-49ba-a56f-6d7ff719a9c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/registry/LocalRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/server/HttpServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/server/VertxHttpServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/model/RpcRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/model/RpcResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/serializer/JdkSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/serializer/Serializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/server/HttpServerHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-common/src/main/java/com/qiwang/example/common/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-common/src/main/java/com/qiwang/example/common/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-common/src/main/java/com/qiwang/example/common/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-common/src/main/java/com/qiwang/example/common/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-common/src/test/java/com/qiwang/UserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-common/src/test/java/com/qiwang/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/EasyConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/EasyConsumerExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example-provider/src/main/java/com/qiwang/example/provider/EasyProviderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/qiwang/example/provider/EasyProviderExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-provider/src/main/java/com/qiwang/example/provider/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/qiwang/example/provider/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-main-simple/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-simple/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/App.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/registry/LocalRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/registry/LocalRegistry.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,12 +107,24 @@
       <option name="presentableId" value="Default" />
       <updated>1716454895713</updated>
       <workItem from="1716454897023" duration="2256000" />
-      <workItem from="1716816658068" duration="11699000" />
+      <workItem from="1716816658068" duration="19855000" />
     </task>
+    <task id="LOCAL-00001" summary="5.28 add httpserver">
+      <created>1716908139897</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716908139897</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="5.28 add httpserver" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.28 add httpserver" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
