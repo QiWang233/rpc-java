@@ -5,14 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4d4780e-7ada-49ba-a56f-6d7ff719a9c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/model/RpcRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/model/RpcResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/serializer/JdkSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/serializer/Serializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/server/HttpServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/UserServiceProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-provider/src/main/java/com/qiwang/example/provider/EasyProviderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/qiwang/example/provider/EasyProviderExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/registry/LocalRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/registry/LocalRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/EasyConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/EasyConsumerExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/server/VertxHttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/server/VertxHttpServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +61,7 @@
       <recent name="E:\java_projects\JAVA\RPC\src\main\java\part2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EasyProviderExample">
+  <component name="RunManager" selected="Application.EasyConsumerExample">
     <configuration name="EasyConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qiwang.example.consumer.EasyConsumerExample" />
       <module name="example-consumer" />
@@ -93,8 +90,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.EasyProviderExample" />
         <item itemvalue="Application.EasyConsumerExample" />
+        <item itemvalue="Application.EasyProviderExample" />
       </list>
     </recent_temporary>
   </component>
@@ -107,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716454895713</updated>
       <workItem from="1716454897023" duration="2256000" />
-      <workItem from="1716816658068" duration="19855000" />
+      <workItem from="1716816658068" duration="23645000" />
     </task>
     <task id="LOCAL-00001" summary="5.28 add httpserver">
       <created>1716908139897</created>
@@ -116,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716908139897</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add HttpServerHandler request handler">
+      <created>1716990561793</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1716990561793</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,7 +128,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="5.28 add httpserver" />
-    <option name="LAST_COMMIT_MESSAGE" value="5.28 add httpserver" />
+    <MESSAGE value="add HttpServerHandler request handler" />
+    <option name="LAST_COMMIT_MESSAGE" value="add HttpServerHandler request handler" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
