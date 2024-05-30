@@ -1,6 +1,8 @@
 package com.qiwang.rpc.proxy;
 
+import cn.hutool.aop.interceptor.SpringCglibInterceptor;
 import cn.hutool.http.HttpRequest;
+import cn.hutool.http.HttpResponse;
 import com.qiwang.rpc.model.RpcRequest;
 import com.qiwang.rpc.model.RpcResponse;
 import com.qiwang.rpc.serializer.JdkSerializer;
@@ -9,7 +11,7 @@ import com.qiwang.rpc.serializer.Serializer;
 import java.io.IOException;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
-import cn.hutool.http.HttpResponse;
+
 
 /**
  * jdk动态代理
@@ -28,8 +30,10 @@ public class ServiceProxy implements InvocationHandler {
                 .parameterTypes(method.getParameterTypes())
                 .args(args)
                 .build();
+        System.out.println(rpcRequest);
 
         try{
+//            System.out.println("发送");
             // 序列化
             byte[] bodyBytes = serializer.serialize(rpcRequest);
             // 发送请求
@@ -48,3 +52,4 @@ public class ServiceProxy implements InvocationHandler {
         return null;
     }
 }
+

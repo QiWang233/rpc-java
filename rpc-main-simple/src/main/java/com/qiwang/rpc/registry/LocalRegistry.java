@@ -16,7 +16,6 @@ public class LocalRegistry {
      */
     public static void register(String serviceName, Class<?> implClass){
         map.put(serviceName, implClass);
-        System.out.println("add:" + serviceName);
     }
 
     /**

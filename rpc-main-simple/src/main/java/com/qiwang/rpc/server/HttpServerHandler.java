@@ -24,12 +24,12 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
 
         // 异步处理HTTP请求
         request.bodyHandler(body -> {
-           byte[] bytes = body.getBytes();
+            byte[] bytes = body.getBytes();
             RpcRequest rpcRequest = null;
             try {
                 rpcRequest = serializer.deserialize(bytes, RpcRequest.class);
-            } catch (IOException e) {
-                throw new RuntimeException(e);
+            } catch (Exception e) {
+                e.printStackTrace();
             }
 
             // 构造响应结果对象
@@ -42,6 +42,7 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
             }
 
             try {
+                System.out.println("***************"+rpcRequest.getServiceName());
                 Class<?> implClass = LocalRegistry.get(rpcRequest.getServiceName());
                 Method method = implClass.getMethod(rpcRequest.getMethodName(), rpcRequest.getParameterTypes());
                 Object result = method.invoke(implClass.getDeclaredConstructor().newInstance(), rpcRequest.getArgs());
@@ -71,6 +72,7 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
         try {
             //序列化
             byte[] serialized = serializer.serialize(rpcResponse);
+            httpServerResponse.end(Buffer.buffer(serialized));
         } catch (IOException e) {
             e.printStackTrace();
             httpServerResponse.end(Buffer.buffer());

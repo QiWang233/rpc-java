@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4d4780e-7ada-49ba-a56f-6d7ff719a9c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/UserServiceProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/proxy/ServiceProxyFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/EasyConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/EasyConsumerExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/server/VertxHttpServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/server/VertxHttpServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/UserServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/UserServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/registry/LocalRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/registry/LocalRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/server/HttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/server/HttpServerHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +50,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "E:/java_projects/rpc-java",
+    "last_opened_file_path": "F:/java/yu-rpc-master/yu-rpc-master",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -104,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1716454895713</updated>
       <workItem from="1716454897023" duration="2256000" />
-      <workItem from="1716816658068" duration="23645000" />
+      <workItem from="1716816658068" duration="37973000" />
     </task>
     <task id="LOCAL-00001" summary="5.28 add httpserver">
       <created>1716908139897</created>
@@ -120,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716990561793</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add proxy(static dynamic)">
+      <created>1716994210386</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716994210386</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +138,39 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="5.28 add httpserver" />
     <MESSAGE value="add HttpServerHandler request handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="add HttpServerHandler request handler" />
+    <MESSAGE value="add proxy(static dynamic)" />
+    <option name="LAST_COMMIT_MESSAGE" value="add proxy(static dynamic)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/EasyConsumerExample.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="rpcRequest" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -19,7 +19,7 @@ public class UserServiceProxy implements UserService {
     public User getUser(User user) {
         // 指定序列化器
         Serializer serializer = new JdkSerializer();
-        
+
         // 发请求 @builder允许链式赋值  .builder()...build()
         RpcRequest rpcRequest = RpcRequest.builder()
                 .serviceName(UserService.class.getName())
@@ -31,19 +31,20 @@ public class UserServiceProxy implements UserService {
 
         try {
             byte[] bodyBytes = serializer.serialize(rpcRequest);
-            byte[] result;
             // try-with-source
             try (HttpResponse httpResponse = HttpRequest.post("http://localhost:8080")
                         .body(bodyBytes)
                         .execute()){
-                result = httpResponse.bodyBytes();
+                byte[] result = httpResponse.bodyBytes();
+                // 反序列化
+                RpcResponse rpcResponse = serializer.deserialize(result, RpcResponse.class);
+                return (User) rpcResponse.getData();
             }
-            RpcResponse rpcResponse = serializer.deserialize(result, RpcResponse.class);
-            return (User) rpcResponse.getData();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
-        
+
         return null;
     }
 }
