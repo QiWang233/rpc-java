@@ -5,10 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4d4780e-7ada-49ba-a56f-6d7ff719a9c6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/ConsumerExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-consumer/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/qiwang/example/provider/ProviderExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/RpcApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/config/RpcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/constant/RpcConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/model/RpcRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/model/RpcResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/registry/LocalRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/serializer/JdkSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/serializer/Serializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/server/HttpServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/server/HttpServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/server/VertxHttpServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/utils/ConfigUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/test/java/com/qiwang/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/test/java/org/example/AppTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/server/HttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/server/HttpServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-main-simple/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-simple/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +54,13 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
@@ -40,27 +72,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;F:/java/yu-rpc-master/yu-rpc-master&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "E:/java_projects/rpc-java/rpc-main-core/pom.xml",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java_projects\rpc-java" />
       <recent name="E:\java_projects\JAVA\RPC\src\main\java\part3" />
       <recent name="E:\java_projects\JAVA\RPC\src\main\java\part2" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\java_projects\rpc-java\example-consumer\src\main" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.EasyConsumerExample">
+  <component name="RunManager" selected="Application.ConsumerExample">
+    <configuration name="ConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qiwang.example.consumer.ConsumerExample" />
+      <module name="example-consumer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qiwang.example.consumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EasyConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qiwang.example.consumer.EasyConsumerExample" />
       <module name="example-consumer" />
@@ -87,8 +136,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProviderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.qiwang.example.provider.ProviderExample" />
+      <module name="example-provider" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qiwang.example.provider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConsumerExample" />
+        <item itemvalue="Application.ProviderExample" />
         <item itemvalue="Application.EasyConsumerExample" />
         <item itemvalue="Application.EasyProviderExample" />
       </list>
@@ -104,7 +168,7 @@
       <updated>1716454895713</updated>
       <workItem from="1716454897023" duration="2256000" />
       <workItem from="1716816658068" duration="40439000" />
-      <workItem from="1717157056518" duration="4355000" />
+      <workItem from="1717157056518" duration="10692000" />
     </task>
     <task id="LOCAL-00001" summary="5.28 add httpserver">
       <created>1716908139897</created>
@@ -134,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717089501053</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="easy rpc done completely">
+      <created>1717162582599</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1717162582599</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,7 +216,8 @@
     <MESSAGE value="add HttpServerHandler request handler" />
     <MESSAGE value="add proxy(static dynamic)" />
     <MESSAGE value="easy rpc done" />
-    <option name="LAST_COMMIT_MESSAGE" value="easy rpc done" />
+    <MESSAGE value="easy rpc done completely" />
+    <option name="LAST_COMMIT_MESSAGE" value="easy rpc done completely" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

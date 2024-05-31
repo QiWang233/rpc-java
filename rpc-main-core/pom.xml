@@ -1,13 +1,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.qiwang</groupId>
-  <artifactId>example-provider</artifactId>
+  <artifactId>rpc-main-core</artifactId>
   <version>1.0-SNAPSHOT</version>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>8</source>
+          <target>8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
   <packaging>jar</packaging>
 
-  <name>example-provider</name>
+  <name>rpc-main-core</name>
   <url>http://maven.apache.org</url>
 
   <properties>
@@ -15,22 +27,11 @@
   </properties>
 
   <dependencies>
+
     <dependency>
-      <groupId>com.qiwang</groupId>
-      <artifactId>example-common</artifactId>
-      <version>1.0-SNAPSHOT</version>
-    </dependency>
-    <!-- simple   -->
-    <!--    <dependency>-->
-    <!--      <groupId>com.qiwang</groupId>-->
-    <!--      <artifactId>rpc-main-simple</artifactId>-->
-    <!--      <version>1.0-SNAPSHOT</version>-->
-    <!--    </dependency>-->
-    <!-- core   -->
-    <dependency>
-      <groupId>com.qiwang</groupId>
-      <artifactId>rpc-main-core</artifactId>
-      <version>1.0-SNAPSHOT</version>
+      <groupId>io.vertx</groupId>
+      <artifactId>vertx-core</artifactId>
+      <version>4.5.1</version>
     </dependency>
 
     <!-- https://doc.hutool.cn/ -->
@@ -39,6 +40,8 @@
       <artifactId>hutool-all</artifactId>
       <version>5.8.16</version>
     </dependency>
+
+
     <!-- https://projectlombok.org/ -->
     <dependency>
       <groupId>org.projectlombok</groupId>
@@ -46,7 +49,23 @@
       <version>1.18.30</version>
       <scope>provided</scope>
     </dependency>
-
+    <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.25</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>1.7.25</version>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic -->
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>1.3.12</version>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
