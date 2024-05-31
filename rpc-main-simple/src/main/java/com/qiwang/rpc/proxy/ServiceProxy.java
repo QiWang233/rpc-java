@@ -30,7 +30,7 @@ public class ServiceProxy implements InvocationHandler {
                 .parameterTypes(method.getParameterTypes())
                 .args(args)
                 .build();
-        System.out.println(rpcRequest);
+//        System.out.println(rpcRequest);
 
         try{
 //            System.out.println("发送");

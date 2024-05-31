@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4d4780e-7ada-49ba-a56f-6d7ff719a9c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/proxy/ServiceProxyFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/EasyConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/EasyConsumerExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/UserServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/UserServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/registry/LocalRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/registry/LocalRegistry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/server/HttpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/server/HttpServerHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,20 +40,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "corretto-17",
-    "last_opened_file_path": "F:/java/yu-rpc-master/yu-rpc-master",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/java/yu-rpc-master/yu-rpc-master&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\java_projects\JAVA\RPC\src\main\java\part3" />
@@ -106,7 +103,8 @@
       <option name="presentableId" value="Default" />
       <updated>1716454895713</updated>
       <workItem from="1716454897023" duration="2256000" />
-      <workItem from="1716816658068" duration="37973000" />
+      <workItem from="1716816658068" duration="40439000" />
+      <workItem from="1717157056518" duration="4355000" />
     </task>
     <task id="LOCAL-00001" summary="5.28 add httpserver">
       <created>1716908139897</created>
@@ -129,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1716994210386</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="easy rpc done">
+      <created>1717089501053</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1717089501053</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +144,8 @@
     <MESSAGE value="5.28 add httpserver" />
     <MESSAGE value="add HttpServerHandler request handler" />
     <MESSAGE value="add proxy(static dynamic)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add proxy(static dynamic)" />
+    <MESSAGE value="easy rpc done" />
+    <option name="LAST_COMMIT_MESSAGE" value="easy rpc done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -160,12 +166,41 @@
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/EasyConsumerExample.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/rpc-main-simple/src/main/java/com/qiwang/rpc/server/HttpServerHandler.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/UserServiceProxy.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/UserServiceProxy.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/UserServiceProxy.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/EasyConsumerExample.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="20" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="com.qiwang.example.common.model.User" memberName="name" />
+      </pinned-members>
+    </pin-to-top-manager>
     <watches-manager>
       <configuration name="Application">
         <watch expression="rpcRequest" />

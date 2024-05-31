@@ -42,7 +42,6 @@ public class HttpServerHandler implements Handler<HttpServerRequest> {
             }
 
             try {
-                System.out.println("***************"+rpcRequest.getServiceName());
                 Class<?> implClass = LocalRegistry.get(rpcRequest.getServiceName());
                 Method method = implClass.getMethod(rpcRequest.getMethodName(), rpcRequest.getParameterTypes());
                 Object result = method.invoke(implClass.getDeclaredConstructor().newInstance(), rpcRequest.getArgs());
