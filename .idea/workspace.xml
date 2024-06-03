@@ -5,34 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4d4780e-7ada-49ba-a56f-6d7ff719a9c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/ConsumerExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example-consumer/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/qiwang/example/provider/ProviderExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/RpcApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/config/RpcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/constant/RpcConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/model/RpcRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/model/RpcResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/registry/LocalRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/serializer/JdkSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/serializer/Serializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/server/HttpServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/server/HttpServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/server/VertxHttpServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/utils/ConfigUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/test/java/com/qiwang/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/test/java/org/example/AppTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/MockServiceProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-consumer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example-provider/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/example-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-common/src/main/java/com/qiwang/example/common/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-common/src/main/java/com/qiwang/example/common/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/EasyConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/EasyConsumerExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-main-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/config/RpcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/config/RpcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxyFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxyFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rpc-main-simple/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-simple/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +77,7 @@
       <recent name="E:\java_projects\rpc-java\example-consumer\src\main" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConsumerExample">
+  <component name="RunManager" selected="Application.EasyConsumerExample">
     <configuration name="ConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qiwang.example.consumer.ConsumerExample" />
       <module name="example-consumer" />
@@ -151,10 +132,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ConsumerExample" />
-        <item itemvalue="Application.ProviderExample" />
         <item itemvalue="Application.EasyConsumerExample" />
         <item itemvalue="Application.EasyProviderExample" />
+        <item itemvalue="Application.ConsumerExample" />
+        <item itemvalue="Application.ProviderExample" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +149,9 @@
       <updated>1716454895713</updated>
       <workItem from="1716454897023" duration="2256000" />
       <workItem from="1716816658068" duration="40439000" />
-      <workItem from="1717157056518" duration="10692000" />
+      <workItem from="1717157056518" duration="12265000" />
+      <workItem from="1717341690158" duration="720000" />
+      <workItem from="1717383759359" duration="4215000" />
     </task>
     <task id="LOCAL-00001" summary="5.28 add httpserver">
       <created>1716908139897</created>
@@ -205,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1717162582599</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add config module">
+      <created>1717170853088</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1717170853088</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,7 +207,8 @@
     <MESSAGE value="add proxy(static dynamic)" />
     <MESSAGE value="easy rpc done" />
     <MESSAGE value="easy rpc done completely" />
-    <option name="LAST_COMMIT_MESSAGE" value="easy rpc done completely" />
+    <MESSAGE value="add config module" />
+    <option name="LAST_COMMIT_MESSAGE" value="add config module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -256,11 +247,6 @@
           <url>file://$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/UserServiceProxy.java</url>
           <line>37</line>
           <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/EasyConsumerExample.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="19" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />

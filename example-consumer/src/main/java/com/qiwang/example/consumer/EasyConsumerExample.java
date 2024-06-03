@@ -6,8 +6,10 @@ import com.qiwang.rpc.proxy.ServiceProxyFactory;
 
 public class EasyConsumerExample {
     public static void main(String[] args) {
+        // Mock代理
+        UserService userService = ServiceProxyFactory.getMockProxy(UserService.class);
         // 动态代理
-        UserService userService = ServiceProxyFactory.getProxy(UserService.class);
+//        UserService userService = ServiceProxyFactory.getProxy(UserService.class);
         // 静态代理
 //        UserService userService = new UserServiceProxy();
         // todo 需要获取 UserService 的实现类对象
@@ -23,5 +25,8 @@ public class EasyConsumerExample {
         } else {
             System.out.println("user==null !!");
         }
+        // 应该能看到输出的结果值为 0，而不是 1，说明调用了 MockServiceProxy 模拟服务代理。当然也可以通过 Debug 的方式进行验证
+        long number = userService.getNumber();
+        System.out.println(number);
     }
 }
