@@ -1,0 +1,2 @@
+jdk=com.qiwang.rpc.serializer.JdkSerializer
+hessian=com.qiwang.rpc.serializer.HessianSerializer

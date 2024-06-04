@@ -1,0 +1,2 @@
+json=com.qiwang.rpc.serializer.JsonSerializer
+kryo=com.qiwang.rpc.serializer.KryoSerializer
