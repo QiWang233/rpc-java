@@ -75,13 +75,22 @@
       <version>2.9.6</version>
     </dependency>
 
+
+    <!-- https://mvnrepository.com/artifact/io.etcd/jetcd-core -->
+    <dependency>
+      <groupId>io.etcd</groupId>
+      <artifactId>jetcd-core</artifactId>
+      <version>0.7.7</version>
+    </dependency>
+
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>3.8.1</version>
+      <version>RELEASE</version>
       <scope>test</scope>
     </dependency>
   </dependencies>
+
 
   <build>
     <plugins>
