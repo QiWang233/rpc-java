@@ -1,1 +1,2 @@
 etcd=com.qiwang.rpc.registry.EtcdRegistry
+zookeeper=com.qiwang.rpc.registry.ZooKeeperRegistry

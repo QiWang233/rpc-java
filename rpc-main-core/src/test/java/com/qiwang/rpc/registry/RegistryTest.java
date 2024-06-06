@@ -59,4 +59,12 @@ public class RegistryTest {
         List<ServiceMetaInfo> serviceMetaInfoList = registry.serviceDiscovery(serviceKey);
         Assert.assertNotNull(serviceMetaInfoList);
     }
+
+    @Test
+    public void heartBeat() throws Exception {
+        // 重新注册
+        register();
+        // 阻塞 一分钟
+        Thread.sleep(60 * 1000L);
+    }
 }

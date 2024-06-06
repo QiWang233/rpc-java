@@ -16,8 +16,6 @@ public class ProviderExample {
     public static void main(String[] args) {
         // RPC框架初始化，初始化参数
         RpcApplication.init();
-//        RpcConfig rpc = ConfigUtils.loadConfig(RpcConfig.class, "rpc");
-//        System.out.println(rpc);
 
         // 注册服务
         String serviceName = UserService.class.getName();
