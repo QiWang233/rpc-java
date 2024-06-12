@@ -88,10 +88,10 @@ public class EtcdRegistry implements Registry{
         // 优先从缓存中获取服务
         List<ServiceMetaInfo> cachedServiceMetaInfoList = registryServiceCache.readCache();
         if (cachedServiceMetaInfoList != null) {
-//            System.out.println("22222222222222222");
+            System.out.println("22222222222222222");
             return cachedServiceMetaInfoList;
         }
-//        System.out.println("11111111111111111111");
+        System.out.println("11111111111111111111");
         // 前缀搜索， 结尾一定要加‘/’
         String searchPrefix = ETCD_ROOT_PATH + serviceKey + "/";
 

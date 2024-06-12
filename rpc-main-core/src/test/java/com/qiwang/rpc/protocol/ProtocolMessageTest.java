@@ -10,6 +10,7 @@ import org.junit.Test;
 import java.io.IOException;
 
 public class ProtocolMessageTest {
+
     @Test
     public void testEncoderAndDecode() throws IOException{
         //构造消息

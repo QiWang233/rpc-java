@@ -10,7 +10,9 @@ import com.qiwang.rpc.registry.Registry;
 import com.qiwang.rpc.registry.RegistryFactory;
 import com.qiwang.rpc.server.HttpServer;
 import com.qiwang.rpc.server.VertxHttpServer;
+import com.qiwang.rpc.server.VertxTcpServer;
 import com.qiwang.rpc.utils.ConfigUtils;
+import io.vertx.core.Vertx;
 
 public class ProviderExample {
     public static void main(String[] args) {
@@ -19,6 +21,7 @@ public class ProviderExample {
 
         // 注册服务
         String serviceName = UserService.class.getName();
+        System.out.println(serviceName + UserServiceImpl.class);
         LocalRegistry.register(serviceName, UserServiceImpl.class);
 
         // 注册服务到注册中心
@@ -36,7 +39,11 @@ public class ProviderExample {
         }
 
         //启动web服务
-        HttpServer httpServer = new VertxHttpServer();
-        httpServer.doStart(RpcApplication.getRpcConfig().getServerPort());
+//        HttpServer httpServer = new VertxHttpServer();
+//        httpServer.doStart(RpcApplication.getRpcConfig().getServerPort());
+
+        // 启动tcp服务
+        VertxTcpServer vertxTcpServer = new VertxTcpServer();
+        vertxTcpServer.doStart(8081);
     }
 }
