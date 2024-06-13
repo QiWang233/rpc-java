@@ -39,8 +39,9 @@ public class TcpServerHandler implements Handler<NetSocket> {
             try {
                 // 获取要调用的服务实现类，通过反射调用
                 Class<?> implClass = LocalRegistry.get(rpcRequest.getServiceName());
-                System.out.println(implClass);
-                Method method = implClass.getMethod(rpcRequest.getMethodName());
+                System.out.println("implClass:"+implClass);
+                System.out.println("rpcRequest:"+rpcRequest.toString());
+                Method method = implClass.getMethod(rpcRequest.getMethodName(), rpcRequest.getParameterTypes());
                 Object result = method.invoke(implClass.getDeclaredConstructor().newInstance(), rpcRequest.getArgs());
                 // 封装返回结果
                 rpcResponse.setData(result);
@@ -53,7 +54,6 @@ public class TcpServerHandler implements Handler<NetSocket> {
             }
 
             // 发送响应，编码
-
             header.setType((byte) ProtocolMessageTypeEnum.RESPONSE.getKey());
             header.setStatus((byte) ProtocolMessageStatusEnum.OK.getValue());
             ProtocolMessage<RpcResponse> responseProtocolMessage = new ProtocolMessage<>(header, rpcResponse);

@@ -24,6 +24,7 @@ public class LocalRegistry {
      * @return
      */
     public static Class<?> get(String serviceName){
+        System.out.println(map.toString());
         return map.get(serviceName);
     }
 
