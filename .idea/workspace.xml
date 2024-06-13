@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4d4780e-7ada-49ba-a56f-6d7ff719a9c6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/loadbalancer/ConsistentHashLoadBalancer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/loadbalancer/LoadBalancer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/loadbalancer/LoadBalancerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/loadbalancer/LoadBalancerKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/loadbalancer/RandomLoadBalancer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/loadbalancer/RoundRobinLoadBalancer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/resources/META-INF/rpc/system/com.qiwang.rpc.loadbalancer.LoadBalancer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/test/java/com/qiwang/rpc/loadbalancer/LoadBalancerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/registry/LocalRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/registry/LocalRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/config/RpcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/config/RpcConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/server/TcpServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/server/TcpServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/server/VertxTcpClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/server/VertxTcpClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -77,7 +88,7 @@
       <recent name="E:\java_projects\rpc-java\rpc-main-core\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConsumerExample">
+  <component name="RunManager" selected="JUnit.LoadBalancerTest.select">
     <configuration name="ConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qiwang.example.consumer.ConsumerExample" />
       <module name="example-consumer" />
@@ -130,26 +141,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VertxTcpServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qiwang.rpc.server.VertxTcpServer" />
+    <configuration name="LoadBalancerTest.select" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rpc-main-core" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qiwang.rpc.server.*" />
+          <option name="PATTERN" value="com.qiwang.rpc.loadbalancer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.qiwang.rpc.loadbalancer" />
+      <option name="MAIN_CLASS_NAME" value="com.qiwang.rpc.loadbalancer.LoadBalancerTest" />
+      <option name="METHOD_NAME" value="select" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LoadBalancerTest.select" />
         <item itemvalue="Application.ConsumerExample" />
         <item itemvalue="Application.ProviderExample" />
         <item itemvalue="Application.EasyConsumerExample" />
         <item itemvalue="Application.VertxTcpClient" />
-        <item itemvalue="Application.VertxTcpServer" />
       </list>
     </recent_temporary>
   </component>
@@ -167,7 +181,7 @@
       <workItem from="1717341690158" duration="720000" />
       <workItem from="1717383759359" duration="15469000" />
       <workItem from="1717508754539" duration="54122000" />
-      <workItem from="1718251179107" duration="2059000" />
+      <workItem from="1718251179107" duration="6931000" />
     </task>
     <task id="LOCAL-00001" summary="5.28 add httpserver">
       <created>1716908139897</created>
@@ -253,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718209486963</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add Protocol module done without bug.">
+      <created>1718286202518</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1718286202518</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,7 +293,8 @@
     <MESSAGE value="add registry improve module and ZooKeeperRegistry" />
     <MESSAGE value="add Protocol encoder and decoder" />
     <MESSAGE value="add Protocol module done but have bug." />
-    <option name="LAST_COMMIT_MESSAGE" value="add Protocol module done but have bug." />
+    <MESSAGE value="add Protocol module done without bug." />
+    <option name="LAST_COMMIT_MESSAGE" value="add Protocol module done without bug." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -328,33 +350,18 @@
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/server/TcpServerHandler.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/server/TcpServerHandler.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/server/TcpServerHandler.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java</url>
-          <line>121</line>
+          <line>129</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java</url>
-          <line>95</line>
+          <line>99</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java</url>
-          <line>122</line>
+          <line>130</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -374,7 +381,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java</url>
-          <line>113</line>
+          <line>117</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">

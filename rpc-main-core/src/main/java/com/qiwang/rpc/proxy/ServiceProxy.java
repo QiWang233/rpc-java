@@ -8,6 +8,8 @@ import cn.hutool.http.HttpResponse;
 import com.qiwang.rpc.RpcApplication;
 import com.qiwang.rpc.config.RpcConfig;
 import com.qiwang.rpc.constant.RpcConstant;
+import com.qiwang.rpc.loadbalancer.LoadBalancer;
+import com.qiwang.rpc.loadbalancer.LoadBalancerFactory;
 import com.qiwang.rpc.model.RpcRequest;
 import com.qiwang.rpc.model.RpcResponse;
 import com.qiwang.rpc.model.ServiceMetaInfo;
@@ -27,7 +29,9 @@ import io.vertx.core.net.NetSocket;
 import java.io.IOException;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.concurrent.CompletableFuture;
 
 
@@ -113,11 +117,15 @@ public class ServiceProxy implements InvocationHandler {
             serviceMetaInfo.setServiceVersion(RpcConstant.DEFAULT_SERVICE_VERSION);
             List<ServiceMetaInfo> serviceMetaInfoList = registry.serviceDiscovery(serviceMetaInfo.getServiceKey());
 
-//            if (CollUtil.isEmpty(serviceMetaInfoList)) {
-//                throw new RuntimeException("暂无服务地址");
-//            }
-//            ServiceMetaInfo selectedServiceMetaInfo = serviceMetaInfoList.get(0);
-            ServiceMetaInfo selectedServiceMetaInfo = new ServiceMetaInfo();
+            if (CollUtil.isEmpty(serviceMetaInfoList)) {
+                throw new RuntimeException("暂无服务地址");
+            }
+            // 负载均衡
+            LoadBalancer loadBalancer = LoadBalancerFactory.getInstance(rpcConfig.getLoaderBalancer());
+            // 将调用方法名（请求路径） 作为负载均衡参数
+            Map<String, Object> requestParams = new HashMap<>();
+            requestParams.put("methodName", rpcRequest.getMethodName());
+            ServiceMetaInfo selectedServiceMetaInfo = loadBalancer.select(requestParams, serviceMetaInfoList);
             // 发送 TCP 请求
             RpcResponse rpcResponse = VertxTcpClient.doRequest(rpcRequest, selectedServiceMetaInfo);
             return rpcResponse.getData();

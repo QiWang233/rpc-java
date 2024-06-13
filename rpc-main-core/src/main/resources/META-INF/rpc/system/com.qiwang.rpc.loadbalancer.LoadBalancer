@@ -1,0 +1,3 @@
+roundRobin=com.qiwang.rpc.loadbalancer.RoundRobinLoadBalancer
+random=com.qiwang.rpc.loadbalancer.RandomLoadBalancer
+consistentHash=com.qiwang.rpc.loadbalancer.ConsistentHashLoadBalancer

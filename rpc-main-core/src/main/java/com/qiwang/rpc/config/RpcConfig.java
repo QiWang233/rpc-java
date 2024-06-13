@@ -1,5 +1,7 @@
 package com.qiwang.rpc.config;
 
+import com.qiwang.rpc.loadbalancer.LoadBalancer;
+import com.qiwang.rpc.loadbalancer.LoadBalancerKeys;
 import com.qiwang.rpc.serializer.Serializer;
 import com.qiwang.rpc.serializer.SerializerKeys;
 import lombok.Data;
@@ -43,5 +45,10 @@ public class RpcConfig {
      * 注册中心配置
      */
     private RegistryConfig registryConfig = new RegistryConfig();
+
+    /**
+     * 负载均衡器
+     */
+    private String loaderBalancer = LoadBalancerKeys.ROUND_ROBIN;
 }
 

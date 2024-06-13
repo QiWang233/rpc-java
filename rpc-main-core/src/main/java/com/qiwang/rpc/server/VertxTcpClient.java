@@ -33,8 +33,8 @@ public class VertxTcpClient {
         Vertx vertx = Vertx.vertx();
         NetClient netClient = vertx.createNetClient();
         CompletableFuture<RpcResponse> responseFuture = new CompletableFuture<>();
-        netClient.connect(8081, "localhost",
-//        netClient.connect(serviceMetaInfo.getServicePort(), serviceMetaInfo.getServiceHost(),
+//        netClient.connect(8081, "localhost",
+        netClient.connect(serviceMetaInfo.getServicePort(), serviceMetaInfo.getServiceHost(),
                 result -> {
                     if (!result.succeeded()) {
                         System.err.println("Failed to connect to TCP server");
