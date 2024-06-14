@@ -1,6 +1,8 @@
 package com.qiwang.rpc.config;
 
 import com.qiwang.rpc.fault.retry.RetryStrategyKeys;
+import com.qiwang.rpc.fault.tolerant.TolerantStrategy;
+import com.qiwang.rpc.fault.tolerant.TolerantStrategyKeys;
 import com.qiwang.rpc.loadbalancer.LoadBalancer;
 import com.qiwang.rpc.loadbalancer.LoadBalancerKeys;
 import com.qiwang.rpc.serializer.Serializer;
@@ -56,5 +58,10 @@ public class RpcConfig {
      * 重试策略
      */
     private String retryStrategy = RetryStrategyKeys.NO;
+
+    /**
+     * 容错策略
+     */
+    public String tolerantStrategy = TolerantStrategyKeys.FAIL_FAST;
 }
 

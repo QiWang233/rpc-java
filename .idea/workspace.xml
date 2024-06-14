@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4d4780e-7ada-49ba-a56f-6d7ff719a9c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/retry/FixedIntervalRetryStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/retry/NoRetryStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/retry/RetryStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/retry/RetryStrategyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/retry/RetryStrategyKeys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/resources/META-INF/rpc/system/com.qiwang.rpc.fault.retry.RetryStrategy" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/test/java/com/qiwang/rpc/fault/retry/RetryStrategyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/tolerant/FailBackTolerantStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/tolerant/FailFastTolerantStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/tolerant/FailOverTolerantStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/tolerant/FailSafeTolerantStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/tolerant/TolerantStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/tolerant/TolerantStrategyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/tolerant/TolerantStrategyKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/resources/META-INF/rpc/system/com.qiwang.rpc.fault.tolerant.TolerantStrategy" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-main-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-core/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/config/RpcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/config/RpcConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java" afterDir="false" />
     </list>
@@ -55,25 +55,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/java_projects/rpc-java/example-provider/src/main/java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.fileTypes&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_opened_file_path": "E:/java_projects/rpc-java/rpc-main-core/src/main/resources/META-INF/rpc/system",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.fileTypes"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\java_projects\rpc-java\rpc-main-core\src\main\resources\META-INF\rpc\system" />
       <recent name="E:\java_projects\rpc-java\example-provider\src\main\java" />
       <recent name="E:\java_projects\rpc-java\rpc-main-core\src\main\resources\META-INF\service" />
-      <recent name="E:\java_projects\rpc-java\rpc-main-core\src\main\resources\META-INF\rpc\system" />
       <recent name="E:\java_projects\rpc-java" />
       <recent name="E:\java_projects\JAVA\RPC\src\main\java\part3" />
     </key>
@@ -178,7 +178,7 @@
       <workItem from="1717341690158" duration="720000" />
       <workItem from="1717383759359" duration="15469000" />
       <workItem from="1717508754539" duration="54122000" />
-      <workItem from="1718251179107" duration="11010000" />
+      <workItem from="1718251179107" duration="13260000" />
     </task>
     <task id="LOCAL-00001" summary="5.28 add httpserver">
       <created>1716908139897</created>
@@ -278,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718291720358</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="add RetryStrategy module done.">
+      <created>1718374005342</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1718374005342</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +306,8 @@
     <MESSAGE value="add Protocol module done but have bug." />
     <MESSAGE value="add Protocol module done without bug." />
     <MESSAGE value="add LoadBalancer module done." />
-    <option name="LAST_COMMIT_MESSAGE" value="add LoadBalancer module done." />
+    <MESSAGE value="add RetryStrategy module done." />
+    <option name="LAST_COMMIT_MESSAGE" value="add RetryStrategy module done." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -356,12 +364,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java</url>
-          <line>101</line>
+          <line>103</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java</url>
-          <line>135</line>
+          <line>145</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -381,7 +389,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java</url>
-          <line>119</line>
+          <line>121</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">

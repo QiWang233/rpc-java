@@ -1,0 +1,4 @@
+failBack=com.qiwang.rpc.fault.tolerant.FailBackTolerantStrategy
+failFast=com.qiwang.rpc.fault.tolerant.FailFastTolerantStrategy
+failOver=com.qiwang.rpc.fault.tolerant.FailOverTolerantStrategy
+failSafe=com.qiwang.rpc.fault.tolerant.FailSafeTolerantStrategy
