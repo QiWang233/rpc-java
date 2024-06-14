@@ -1,5 +1,6 @@
 package com.qiwang.rpc.config;
 
+import com.qiwang.rpc.fault.retry.RetryStrategyKeys;
 import com.qiwang.rpc.loadbalancer.LoadBalancer;
 import com.qiwang.rpc.loadbalancer.LoadBalancerKeys;
 import com.qiwang.rpc.serializer.Serializer;
@@ -50,5 +51,10 @@ public class RpcConfig {
      * 负载均衡器
      */
     private String loaderBalancer = LoadBalancerKeys.ROUND_ROBIN;
+
+    /**
+     * 重试策略
+     */
+    private String retryStrategy = RetryStrategyKeys.NO;
 }
 
