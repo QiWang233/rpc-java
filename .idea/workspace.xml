@@ -5,17 +5,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d4d4780e-7ada-49ba-a56f-6d7ff719a9c6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/tolerant/FailBackTolerantStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/tolerant/FailFastTolerantStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/tolerant/FailOverTolerantStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/tolerant/FailSafeTolerantStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/tolerant/TolerantStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/tolerant/TolerantStrategyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/fault/tolerant/TolerantStrategyKeys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/resources/META-INF/rpc/system/com.qiwang.rpc.fault.tolerant.TolerantStrategy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/bootstrap/ConsumerBootstrap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/bootstrap/ProviderBootstrap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/model/ServiceRegisterInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-spring-boot-starter/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-spring-boot-starter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-spring-boot-starter/src/main/java/com/qiwang/rpcspringbootstarter/RpcSpringBootStarterApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-spring-boot-starter/src/main/java/com/qiwang/rpcspringbootstarter/annotation/EnableRpc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-spring-boot-starter/src/main/java/com/qiwang/rpcspringbootstarter/annotation/RpcReference.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-spring-boot-starter/src/main/java/com/qiwang/rpcspringbootstarter/annotation/RpcService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-spring-boot-starter/src/main/java/com/qiwang/rpcspringbootstarter/bootstrap/RpcConsumerBootstrap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-spring-boot-starter/src/main/java/com/qiwang/rpcspringbootstarter/bootstrap/RpcInitBootstrap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-spring-boot-starter/src/main/java/com/qiwang/rpcspringbootstarter/bootstrap/RpcProviderBootstrap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/rpc-spring-boot-starter/src/test/java/com/qiwang/rpcspringbootstarter/RpcSpringBootStarterApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-consumer/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-consumer/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-consumer/src/main/java/com/qiwang/springbootconsumer/ServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-consumer/src/main/java/com/qiwang/springbootconsumer/SpringbootConsumerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-consumer/src/test/java/com/qiwang/springbootconsumer/SpringbootConsumerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-provider/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-provider/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-provider/src/main/java/com/qiwang/springbootprovider/SpringbootProviderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-provider/src/main/java/com/qiwang/springbootprovider/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-provider/src/test/java/com/qiwang/springbootprovider/SpringbootProviderApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/config/RpcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/config/RpcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-core/src/main/java/com/qiwang/rpc/proxy/ServiceProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/ConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-consumer/src/main/java/com/qiwang/example/consumer/ConsumerExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example-provider/src/main/java/com/qiwang/example/provider/ProviderExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/example-provider/src/main/java/com/qiwang/example/provider/ProviderExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rpc-main-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/rpc-main-core/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +47,7 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -57,6 +78,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -85,7 +110,7 @@
       <recent name="E:\java_projects\rpc-java\rpc-main-core\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ConsumerExample">
+  <component name="RunManager" selected="JUnit.SpringbootConsumerApplicationTests.test1">
     <configuration name="ConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.qiwang.example.consumer.ConsumerExample" />
       <module name="example-consumer" />
@@ -99,68 +124,70 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EasyConsumerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qiwang.example.consumer.EasyConsumerExample" />
-      <module name="example-consumer" />
+    <configuration name="SpringbootConsumerApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-consumer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qiwang.example.consumer.*" />
+          <option name="PATTERN" value="com.qiwang.springbootconsumer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.qiwang.springbootconsumer" />
+      <option name="MAIN_CLASS_NAME" value="com.qiwang.springbootconsumer.SpringbootConsumerApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProviderExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qiwang.example.provider.ProviderExample" />
-      <module name="example-provider" />
+    <configuration name="SpringbootConsumerApplicationTests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springboot-consumer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.qiwang.example.provider.*" />
+          <option name="PATTERN" value="com.qiwang.springbootconsumer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VertxTcpClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.qiwang.rpc.server.VertxTcpClient" />
-      <module name="rpc-main-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qiwang.rpc.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoadBalancerTest.select" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rpc-main-core" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.qiwang.rpc.loadbalancer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.qiwang.rpc.loadbalancer" />
-      <option name="MAIN_CLASS_NAME" value="com.qiwang.rpc.loadbalancer.LoadBalancerTest" />
-      <option name="METHOD_NAME" value="select" />
+      <option name="PACKAGE_NAME" value="com.qiwang.springbootconsumer" />
+      <option name="MAIN_CLASS_NAME" value="com.qiwang.springbootconsumer.SpringbootConsumerApplicationTests" />
+      <option name="METHOD_NAME" value="test1" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootConsumerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot-consumer" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qiwang.springbootconsumer.SpringbootConsumerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qiwang.springbootconsumer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringbootProviderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springboot-provider" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.qiwang.springbootprovider.SpringbootProviderApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.qiwang.springbootprovider.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SpringbootConsumerApplicationTests.test1" />
+        <item itemvalue="Spring Boot.SpringbootConsumerApplication" />
+        <item itemvalue="Spring Boot.SpringbootProviderApplication" />
+        <item itemvalue="JUnit.SpringbootConsumerApplicationTests" />
         <item itemvalue="Application.ConsumerExample" />
-        <item itemvalue="Application.ProviderExample" />
-        <item itemvalue="JUnit.LoadBalancerTest.select" />
-        <item itemvalue="Application.EasyConsumerExample" />
-        <item itemvalue="Application.VertxTcpClient" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +205,7 @@
       <workItem from="1717341690158" duration="720000" />
       <workItem from="1717383759359" duration="15469000" />
       <workItem from="1717508754539" duration="54122000" />
-      <workItem from="1718251179107" duration="13260000" />
+      <workItem from="1718251179107" duration="22506000" />
     </task>
     <task id="LOCAL-00001" summary="5.28 add httpserver">
       <created>1716908139897</created>
@@ -285,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1718374005342</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add TolerantStrategy module done.">
+      <created>1718376608663</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1718376608663</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +341,8 @@
     <MESSAGE value="add Protocol module done without bug." />
     <MESSAGE value="add LoadBalancer module done." />
     <MESSAGE value="add RetryStrategy module done." />
-    <option name="LAST_COMMIT_MESSAGE" value="add RetryStrategy module done." />
+    <MESSAGE value="add TolerantStrategy module done." />
+    <option name="LAST_COMMIT_MESSAGE" value="add TolerantStrategy module done." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

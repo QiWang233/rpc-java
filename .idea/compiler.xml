@@ -14,10 +14,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="rpc-main-simple" />
+        <module name="rpc-spring-boot-starter" />
         <module name="example-provider" />
         <module name="example-common" />
-        <module name="example-consumer" />
         <module name="rpc-main-core" />
+        <module name="springboot-provider" />
+        <module name="springboot-consumer" />
+        <module name="example-consumer" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17" />

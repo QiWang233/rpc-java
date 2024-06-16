@@ -1,49 +1,22 @@
 package com.qiwang.example.provider;
 
 import com.qiwang.example.common.service.UserService;
-import com.qiwang.rpc.RpcApplication;
-import com.qiwang.rpc.config.RegistryConfig;
-import com.qiwang.rpc.config.RpcConfig;
-import com.qiwang.rpc.model.ServiceMetaInfo;
-import com.qiwang.rpc.registry.LocalRegistry;
-import com.qiwang.rpc.registry.Registry;
-import com.qiwang.rpc.registry.RegistryFactory;
-import com.qiwang.rpc.server.HttpServer;
-import com.qiwang.rpc.server.VertxHttpServer;
-import com.qiwang.rpc.server.VertxTcpServer;
-import com.qiwang.rpc.utils.ConfigUtils;
-import io.vertx.core.Vertx;
+
+import com.qiwang.rpc.bootstrap.ProviderBootstrap;
+import com.qiwang.rpc.model.ServiceRegisterInfo;
+
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class ProviderExample {
     public static void main(String[] args) {
-        // RPC框架初始化，初始化参数
-        RpcApplication.init();
+        // 要注册的服务
+        List<ServiceRegisterInfo<?>> serviceRegisterInfoList = new ArrayList<>();
+        ServiceRegisterInfo serviceRegisterInfo = new ServiceRegisterInfo<>(UserService.class.getName(), UserServiceImpl.class);
+        serviceRegisterInfoList.add(serviceRegisterInfo);
 
-        // 注册服务
-        String serviceName = UserService.class.getName();
-        System.out.println(serviceName + UserServiceImpl.class);
-        LocalRegistry.register(serviceName, UserServiceImpl.class);
-
-        // 注册服务到注册中心
-        RpcConfig rpcConfig = RpcApplication.getRpcConfig();
-        RegistryConfig registryConfig = rpcConfig.getRegistryConfig();
-        Registry registry = RegistryFactory.getInstance(registryConfig.getRegistry());
-        ServiceMetaInfo serviceMetaInfo = new ServiceMetaInfo();
-        serviceMetaInfo.setServiceName(serviceName);
-        serviceMetaInfo.setServiceHost(rpcConfig.getServerHost());
-        serviceMetaInfo.setServicePort(rpcConfig.getServerPort());
-        try {
-            registry.register(serviceMetaInfo);
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-
-        //启动web服务
-//        HttpServer httpServer = new VertxHttpServer();
-//        httpServer.doStart(RpcApplication.getRpcConfig().getServerPort());
-
-        // 启动tcp服务
-        VertxTcpServer vertxTcpServer = new VertxTcpServer();
-        vertxTcpServer.doStart(8081);
+        // 服务提供者初始化
+        ProviderBootstrap.init(serviceRegisterInfoList);
     }
 }

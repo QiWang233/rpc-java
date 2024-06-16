@@ -2,6 +2,7 @@ package com.qiwang.example.consumer;
 
 import com.qiwang.example.common.model.User;
 import com.qiwang.example.common.service.UserService;
+import com.qiwang.rpc.bootstrap.ConsumerBootstrap;
 import com.qiwang.rpc.config.RpcConfig;
 import com.qiwang.rpc.proxy.ServiceProxyFactory;
 import com.qiwang.rpc.utils.ConfigUtils;
@@ -9,7 +10,8 @@ import com.qiwang.rpc.utils.ConfigUtils;
 public class ConsumerExample {
 
     public static void main(String[] args) {
-        RpcConfig rpc = ConfigUtils.loadConfig(RpcConfig.class, "rpc");
+        // 服务提供者初始化
+        ConsumerBootstrap.init();
 
         // Mock代理
 //        UserService userService = ServiceProxyFactory.getMockProxy(UserService.class);
@@ -26,7 +28,6 @@ public class ConsumerExample {
 //        User newUser2 = userService.getUser(user);
 //        User newUser3 = userService.getUser(user);
         if (newUser != null){
-            System.out.println("调用成功");
             System.out.println(newUser.getName());
         } else {
             System.out.println("user==null !!");
